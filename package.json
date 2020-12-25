@@ -1,0 +1,30 @@
+{
+  "name": "demo-node",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "pm2 start ./bin/www -i max",
+    "dev": "nodemon ./bin/www",
+    "up-models": "sequelize-auto -o './models' -d hrconn_db -h 103.253.72.178 -u hrSystemAdmin -p 5432 -x 4Dm!n2020@Interset -e postgres"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "express-validator": "^6.8.1",
+    "helmet": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "morgan": "~1.9.1",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.5",
+    "sequelize-auto": "^0.7.6",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
